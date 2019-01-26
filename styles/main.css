@@ -1,9 +1,14 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/DisposableDroidBB.otf');
+}
+    
 body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: black;
-    color: white;
+    background: #3e3e3e;
+    color: #ffffff;
     font-family: monospace;
 }
 
@@ -11,13 +16,44 @@ body {
 	position: absolute;
     width: 350px;
     height: 100%;
-    left: calc(100% - 350px);
-    box-shadow: -2px 0px white;
+    right: 0;
+    border-left: 1px solid #292929;
+    padding-bottom: 130px;
+    overflow: scroll;
+}
+
+.message {
+	background: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Major Mono Display';
+    font-size: 16px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+.CPUmsg {
+    margin-left: 40px;
 }
 
 #buttonContainer {
-    position: absolute;
-	background: red;
+    position: fixed;
     width: 100%;
+    bottom: 0;
+    border-top: 1px solid #292929;
+    background: #3e3e3e;
+}
+
+#buttonContainer button {
+	display: block;
+    background: white;
+    color: black;
     padding: 10px;
+    margin: 10px;
+    font-family: 'Major Mono Display';
+    font-size: 16px;
+    width: 330px;
+    border: none;
+    border-radius: 4px;
 }
