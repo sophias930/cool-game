@@ -4,5 +4,5 @@ $(document).ready(() => {
 })
 
 var buildMessagesContainer = function() {
-    
+    messagesContainer.append(buildMessagesContainer());
 }
