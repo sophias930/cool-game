@@ -9,6 +9,7 @@
     <script src="scripts/story.js"></script>
 
     <script src="scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <!-- <link rel="icon" href="css/WebsiteLogo.png" /> -->
 
@@ -18,10 +19,14 @@
     <div id="titleContainer"></div>
     <div id="graphicsContainer"></div>
     <div id="messagesContainer">
-        <div id="chatContainer"></div>
-        <button id="optionA">Option A</button>
-        <button id="optionA">Option B</button>
-
+        <div id="chatContainer">
+            <div class="message USERmsg">Foo</div>
+            <div class="message CPUmsg">Bar</div>
+        </div>
+        <div id="buttonContainer">
+            <button id="optionA">Option A</button>
+            <button id="optionA">Option B</button>
+        </div>
     </div>
 </body>
 

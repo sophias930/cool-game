@@ -1,7 +1,7 @@
 var chatContainer;
 $(document).ready(() => {
-    chatContainer = $("#chatContainer");    
-    populateMessage(true);
+    //chatContainer = $("#chatContainer");    
+    //populateMessage(true);
 })
 
 
@@ -14,7 +14,6 @@ var populateMessage = function (isComputer) {
     chatContainer.append(messageBox);
     messageBox.fadeOut(0);
     messageBox.fadeIn(3000, function () {
-        
         populateMessage(true);
     })
 }

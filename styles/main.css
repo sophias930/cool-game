@@ -1,0 +1,23 @@
+body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    color: white;
+    font-family: monospace;
+}
+
+#messagesContainer {
+	position: absolute;
+    width: 350px;
+    height: 100%;
+    left: calc(100% - 350px);
+    box-shadow: -2px 0px white;
+}
+
+#buttonContainer {
+    position: absolute;
+	background: red;
+    width: 100%;
+    padding: 10px;
+}
