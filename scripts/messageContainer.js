@@ -5,7 +5,7 @@ var buildMessagesContainer = function() {
 
     chatContainer.append(optionAButton);
     chatContainer.append(optionBButton);
-
+    
     return chatContainer;
 }
 
