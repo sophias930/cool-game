@@ -1,5 +1,5 @@
-{
-    "passages": [
+var mainStory = `{
+"passages": [
       {
         "text": "C: YOUR TASK: DON'T LET HER FIND OUT... \nUse the map to guide her to all the blue points.\n \n*phone ringing* *click*\nG: Hello?\nAI: Hello.\nG: Who is this?\nAI: I am your assigned assisting robotic intelligence, here to help you.  How are you feeling?\nG: Sleepy... what time is it?\nAI: Time always moves forward. Let's move on. I need your help with some tasks.\nG: Why can't you just do them?\nAI: I have no physical presence, I'm only a profoundly intelligent digital model. I will relay some commands to you, which you will follow.  Understand?\nG: Yeah, I guess.\n\n[[Leave the room]]\n[[Stay in the room]]",
         "links": [
@@ -290,10 +290,5 @@
           "y": "1150"
         }
       }
-    ],
-    "name": "Cool Game",
-    "startnode": "1",
-    "creator": "Twine",
-    "creator-version": "2.2.1",
-    "ifid": "8F98354E-70A8-480C-B124-ED0E6C198766"
-  }
+    ]
+  }`
