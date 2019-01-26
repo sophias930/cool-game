@@ -1,0 +1,114 @@
+{
+    "passages": [
+      {
+        "text": "DON'T LET HER FIND OUT... \n\n// intro text speaking to the girl and explaining\t\n\tthat you are her AI and can help her.  Tell\n\ther that she must do maintenance tasks.  // \n\n[[Leave the room]]\n\n[[Stay in the room]]",
+        "links": [
+          {
+            "name": "Leave the room",
+            "link": "Leave the room",
+            "pid": "2"
+          },
+          {
+            "name": "Stay in the room",
+            "link": "Stay in the room",
+            "pid": "3"
+          }
+        ],
+        "name": "Beginning",
+        "pid": "1"
+      },
+      {
+        "text": "[[Do something else]]\n\n[[A thing happened]]\n\n[[More happened]]\n",
+        "links": [
+          {
+            "name": "Do something else",
+            "link": "Do something else",
+            "pid": "4"
+          },
+          {
+            "name": "A thing happened",
+            "link": "A thing happened",
+            "pid": "5"
+          },
+          {
+            "name": "More happened",
+            "link": "More happened",
+            "pid": "6"
+          }
+        ],
+        "name": "Leave the room",
+        "pid": "2",
+        "position": {
+          "x": "505",
+          "y": "343"
+        }
+      },
+      {
+        "text": "[[Do something else]]\n[[More happened]]\n[[Oh no]]",
+        "links": [
+          {
+            "name": "Do something else",
+            "link": "Do something else",
+            "pid": "4"
+          },
+          {
+            "name": "More happened",
+            "link": "More happened",
+            "pid": "6"
+          },
+          {
+            "name": "Oh no",
+            "link": "Oh no",
+            "pid": "7"
+          }
+        ],
+        "name": "Stay in the room",
+        "pid": "3",
+        "position": {
+          "x": "744",
+          "y": "344"
+        }
+      },
+      {
+        "text": "Double-click this passage to edit it.",
+        "name": "Do something else",
+        "pid": "4",
+        "position": {
+          "x": "355",
+          "y": "493"
+        }
+      },
+      {
+        "text": "Double-click this passage to edit it.",
+        "name": "A thing happened",
+        "pid": "5",
+        "position": {
+          "x": "505",
+          "y": "493"
+        }
+      },
+      {
+        "text": "Double-click this passage to edit it.",
+        "name": "More happened",
+        "pid": "6",
+        "position": {
+          "x": "655",
+          "y": "493"
+        }
+      },
+      {
+        "text": "Double-click this passage to edit it.",
+        "name": "Oh no",
+        "pid": "7",
+        "position": {
+          "x": "545",
+          "y": "493"
+        }
+      }
+    ],
+    "name": "Cool Game",
+    "startnode": "1",
+    "creator": "Twine",
+    "creator-version": "2.2.1",
+    "ifid": "8F98354E-70A8-480C-B124-ED0E6C198766"
+  }
