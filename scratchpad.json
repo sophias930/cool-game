@@ -1,7 +1,7 @@
 {
     "passages": [
       {
-        "text": "C: YOUR TASK: DON'T LET HER FIND OUT... \nC: Use the map to guide her to all the blue points.\nC: *phone ringing* \nC: *click*\nC: BEGINNING VOICE TRANSCRIPTION... \nG: Hello?\nAI: Hello.\nG: Who is this?\nAI: I am here to help you.  How are you feeling?\nG: Sleepy... what time is it?  Where am I?\nAI: Time always moves forward. Let's move on. I need your help with some tasks.\nG: Why can't you just do them?\nAI: I need your help. I will relay some commands to you, which you will follow. Understand?\nG: Yeah, I guess. But where's everyone else?\nAI: They are nearby, but busy. Please follow my instructions.\nG: Why is everything made of metal? This room is so ugly!\n[[Leave the room]]\n[[Stay in the room]]",
+        "text": "C: YOUR TASK: DON'T LET HER FIND OUT...\nC: Use the map to guide her to all the blue points.\nC: *phone ringing*\nC: *click*\nC: BEGINNING VOICE TRANSCRIPTION... \nG: Hello?\nAI: Hello.\nG: Who is this?\nAI: I am here to help you.  How are you feeling?\nG: Sleepy... what time is it?  Where am I?\nAI: Time always moves forward. Let's move on. I need your help with some tasks.\nG: Why can't you just do them?\nAI: I need your help. I will relay some commands to you, which you will follow. Understand?\nG: Yeah, I guess. But where's everyone else?\nAI: They are nearby, but busy. Please follow my instructions.\nG: Why is everything made of metal? This room is so ugly!\n[[Leave the room]]\n[[Stay in the room]]",
         "links": [
           {
             "name": "Leave the room",
@@ -22,7 +22,7 @@
         }
       },
       {
-        "text": "#GOOD\nG: This place looks so big... do I live here?\nAI: For now, yes.\nG: Where am I going?\nAI: To take care of some things.\nG: I wanna look around first, there's so much here! I think I see a pool table, and a fridge? I'm so thirsty, let me just grab something to drink first.  \n[[Go right]]\n[[Go to fridge]]\n",
+        "text": "#GOOD\nG: This place looks so big... do I live here?\nAI: For now, yes.\nG: Where am I going?\nAI: To take care of some things.\nG: I wanna look around first, there's so much here! I think I see a pool table, and a fridge? I'm so thirsty, let me just grab something to drink first.  \n[[Go right]]\n[[Go to fridge]]",
         "links": [
           {
             "name": "Go right",
@@ -70,7 +70,7 @@
         ]
       },
       {
-        "text": "#GOOD\nG: This machine looks so strange... what am I supposed to do with it?  I don't want to break anything.\nAI: Press the red button labelled 'POWER'.\nC: *whizzing noise* \nG: Okay, now what? \n[[Go to steel wall]]\n[[Go to alcove]]",
+        "text": "#GOOD\nG: This machine looks so strange... what am I supposed to do with it?  I don't want to break anything.\nAI: Press the red button labelled 'POWER'.\nC: *whizzing noise*\nG: Okay, now what? \n[[Go to steel wall]]\n[[Go to alcove]]",
         "links": [
           {
             "name": "Go to steel wall",
@@ -94,7 +94,7 @@
         ]
       },
       {
-        "text": "#BAD\nG: Is there any normal water in this fridge? All I see is those little science tubes filled with red water.\nAI: That isn't water.\nG: This desk is so messy, there's so much junk and paper here. Whoever runs this hospital needs some help.\nG: ...\nG: A worldwide epidemic? This article here says that, there's... 75% of the world's population wiped out? T-this is fake, like The Onion or something, right?\nAI: No, I am afraid not.\nG: This other article, that's my high school!\nG: ...\nG: There's so many missing students, and I'm on the list... \n[[Go to steel wall]] \n[[Go to alcove]] ",
+        "text": "#BAD\nG: Is there any normal water in this fridge? All I see is those little science tubes filled with red water.\nAI: That isn't water.\nG: This desk is so messy, there's so much junk and paper here. Whoever runs this hospital needs some help.\nG: ...\nG: A worldwide epidemic? This article here says that, there's... 75% of the world's population wiped out? T-this is fake, like The Onion or something, right?\nAI: No, I am afraid not.\nG: This other article, that's my high school!\nG: ...\nG: There's so many missing students, and I'm on the list... \n[[Go to steel wall]] \n[[Go to alcove]]",
         "links": [
           {
             "name": "Go to steel wall",
@@ -142,7 +142,7 @@
         ]
       },
       {
-        "text": "#BAD\nG: This looks like some sort of office. It's so dusty, does no one use this?\nAI: It has been a while.\nG: This mirror is so grimy!\nC: *wiping noise* \nG: Wow, I look awful... what happened to my hair? And what are these weird marks on my arms? \nAI: You appear to be in perfect health. Aesthetics are not important.\nG: There's some files here? I wonder if... oh my God, they have my name in here too. I guess I really am a patient here.\nG: ...\nG: My... parents? Where are they? It says 'EXPIRED'. \nAI: Expired is a polite term for dead.\nG: That's not possible! \n[[Check doors]] \n[[Go through hallway]] ",
+        "text": "#BAD\nG: This looks like some sort of office. It's so dusty, does no one use this?\nAI: It has been a while.\nG: This mirror is so grimy!\nC: *wiping noise*\nG: Wow, I look awful... what happened to my hair? And what are these weird marks on my arms? \nAI: You appear to be in perfect health. Aesthetics are not important.\nG: There's some files here? I wonder if... oh my God, they have my name in here too. I guess I really am a patient here.\nG: ...\nG: My... parents? Where are they? It says 'EXPIRED'. \nAI: Expired is a polite term for dead.\nG: That's not possible! \n[[Check doors]] \n[[Go through hallway]] ",
         "links": [
           {
             "name": "Check doors",
@@ -190,7 +190,7 @@
         ]
       },
       {
-        "text": "#GOOD\nAI: See the giant lever at the end of the hallway?\nG: There's like fifty of them, which do I pull? All of them?\nAI: There should be only seven levers. Pull the one labelled 'BARRICADES'.\nC: *loud whirring follow by a loud thud* \n[[Turn left]]\n[[Turn right]]",
+        "text": "#GOOD\nAI: See the giant lever at the end of the hallway?\nG: There's like fifty of them, which do I pull? All of them?\nAI: There should be only seven levers. Pull the one labelled 'BARRICADES'.\nC: *loud whirring follow by a loud thud*\n[[Turn left]]\n[[Turn right]]",
         "links": [
           {
             "name": "Turn left",
@@ -214,7 +214,7 @@
         ]
       },
       {
-        "text": "#GOOD\nG: I don't see anything to do here.\nAI: There there's a panel in the far corner, with a small latch on it. Feel along the wall and you should find it. \nG: I can't find... oh. There's 'ELECTROLYSIS' containers inside? What do I do with these? \nAI: There should be one attached to the wall already. Take it out and replace it with a new container.\nG: Alright. Oh gee, this is much heavier than I expected.\nG: Okay, done!\n[[Go back to your room]]\n",
+        "text": "#GOOD\nG: I don't see anything to do here.\nAI: There there's a panel in the far corner, with a small latch on it. Feel along the wall and you should find it. \nG: I can't find... oh. There's 'ELECTROLYSIS' containers inside? What do I do with these? \nAI: There should be one attached to the wall already. Take it out and replace it with a new container.\nG: Alright. Oh gee, this is much heavier than I expected.\nG: Okay, done!\n[[Go back to your room]]",
         "links": [
           {
             "name": "Go back to your room",
@@ -282,7 +282,7 @@
         }
       },
       {
-        "text": "AI: I do not seem to be able to help you with station maintenance.\nG: Station? So this isn't a hospital? \nG: And where is everyone else? I haven't seen a single... living person in this entire place.\nAI: Do not worry about it. There is nothing that can be done for your situation, so let us just put you back to sleep.\nG: Like, sedate me? I don't know what the hell is happening here, but I want out! I just want to go home!\nAI: There is no home to return to. This is your home now.\nG: I'm getting out of here.\nAI: No please, listen, there's a-\nC: *click* \nC: *phone line dead noise* ",
+        "text": "AI: I do not seem to be able to help you with station maintenance.\nG: Station? So this isn't a hospital? \nG: And where is everyone else? I haven't seen a single... living person in this entire place.\nAI: Do not worry about it. There is nothing that can be done for your situation, so let us just put you back to sleep.\nG: Like, sedate me? I don't know what the hell is happening here, but I want out! I just want to go home!\nAI: There is no home to return to. This is your home now.\nG: I'm getting out of here.\nAI: No please, listen, there's a-\nC: *click*\nC: *phone line dead noise*",
         "name": "bad ending",
         "pid": "14",
         "position": {
