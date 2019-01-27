@@ -5,9 +5,8 @@ var goodScore = 0;
 var badScore = 0;
 
 var loadStory = function () {
-    $.get("https://api.myjson.com/bins/14n2c0", function (data, textStatus, jqXHR) {
+    $.get("https://api.myjson.com/bins/i49ag", function (data, textStatus, jqXHR) {
         storyJSON = data.passages;
-        var string = data.passages[0].text;
     });
 }
 
@@ -38,7 +37,7 @@ var isBranch = function (text) {
 
 var isConsole = function (text) {
     if (text.match("^C: ")) {
-        return text.slice(1, );
+        return text.slice(3, );
     }
 }
 
