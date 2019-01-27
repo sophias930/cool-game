@@ -115,13 +115,14 @@ body {
 }
 
 #girl {
-    height: 21px;
-    width: 21px;
-    background: rgba(118, 255, 0, 0.2);
+    height: 11px;
+    width: 11px;
+    background: rgba(118, 255, 0, 0.3);
     border-radius: 99px;
-    margin: -10px;
+    margin: -5px;
     position: absolute;
     animation: ping 2s infinite;
+    transition: top 2s, left 2s;
     
     left: 593px;
     top: 369px;
