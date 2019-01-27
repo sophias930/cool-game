@@ -22,11 +22,11 @@
         }
       },
       {
-        "text": "#GOOD\nG: This place looks so big... do I live here?\nAI: For now, yes.\nG: Where am I going?\nAI: To take care of some things.\nG: I wanna look around first, there's so much here! I think I see a pool table, and a fridge? I'm so thirsty, let me just grab something to drink first.  \n[[Go right]]\n[[Go to fridge]]",
+        "text": "#GOOD\nG: This place looks so big... do I live here?\nAI: For now, yes.\nG: Where am I going?\nAI: To take care of some things.\nG: I wanna look around first, there's so much here! I think I see a pool table, and a fridge? I'm so thirsty, let me just grab something to drink first.  \n[[Go to generator]]\n[[Go to fridge]]",
         "links": [
           {
-            "name": "Go right",
-            "link": "Go right",
+            "name": "Go to generator",
+            "link": "Go to generator",
             "pid": "4"
           },
           {
@@ -46,11 +46,11 @@
         ]
       },
       {
-        "text": "#BAD\nG: This whole place looks like steel or something, am I in a hospital?\nAI: Something like that.\nG: This long table... it looks like there's rust stains on it. And why are dentistry tools here?\nAI: ...\nG: This window shows nothing, is it covered up from outside?  It's completely black.  \nAI: The window is not covered.\n[[Go right]]\n[[Go to fridge]]",
+        "text": "#BAD\nG: This whole place looks like steel or something, am I in a hospital?\nAI: Something like that.\nG: This long table... it looks like there's rust stains on it. And why are dentistry tools here?\nAI: ...\nG: This window shows nothing, is it covered up from outside?  It's completely black.  \nAI: The window is not covered.\n[[Go to generator]]\n[[Go to fridge]]",
         "links": [
           {
-            "name": "Go right",
-            "link": "Go right",
+            "name": "Go to generator",
+            "link": "Go to generator",
             "pid": "4"
           },
           {
@@ -83,7 +83,7 @@
             "pid": "7"
           }
         ],
-        "name": "Go right",
+        "name": "Go to generator",
         "pid": "4",
         "position": {
           "x": "343",
@@ -166,16 +166,16 @@
         ]
       },
       {
-        "text": "#BAD\nG: You tell me not to worry about it but then tell me to check the doors? \nAI: I suppose.\nG: Cool, cool, which should I check first?\nAI: I will leave it up to you.\nC: *door opening*\nG: It's some kind of bedroom, but it's sooo much nicer than mine! There's no steel anywhere! No fair. \nG: It smells disgusting though. Like, actually repulsive. Let's try a different one.\nC: *door opening*\nG: ...\nG: .....\nG: AAAAAAAAAAAAAAAAAAA!!!!!\nAI: They have been dead for quite some time now. There is nothing to fear.\nG: HOW DOES THAT MAKE THINGS BETTER! Am I gonna be killed too? This man has a KNIFE IN HIS CHEST! Is there even ANYONE alive on this ship? \nG: ...\nG: I'm gonna be sick.\n[[Turn left]] \n[[Turn right]] ",
+        "text": "#BAD\nG: You tell me not to worry about it but then tell me to check the doors? \nAI: I suppose.\nG: Cool, cool, which should I check first?\nAI: I will leave it up to you.\nC: *door opening*\nG: It's some kind of bedroom, but it's sooo much nicer than mine! There's no steel anywhere! No fair. \nG: It smells disgusting though. Like, actually repulsive. Let's try a different one.\nC: *door opening*\nG: ...\nG: .....\nG: AAAAAAAAAAAAAAAAAAA!!!!!\nAI: They have been dead for quite some time now. There is nothing to fear.\nG: HOW DOES THAT MAKE THINGS BETTER! Am I gonna be killed too? This man has a KNIFE IN HIS CHEST! Is there even ANYONE alive on this ship? \nG: ...\nG: I'm gonna be sick.\n[[Turn towards oxygen]] \n[[Turn towards exit]] ",
         "links": [
           {
-            "name": "Turn left",
-            "link": "Turn left",
+            "name": "Turn towards oxygen",
+            "link": "Turn towards oxygen",
             "pid": "10"
           },
           {
-            "name": "Turn right",
-            "link": "Turn right",
+            "name": "Turn towards exit",
+            "link": "Turn towards exit",
             "pid": "11"
           }
         ],
@@ -190,16 +190,16 @@
         ]
       },
       {
-        "text": "#GOOD\nAI: See the giant lever at the end of the hallway?\nG: There's like fifty of them, which do I pull? All of them?\nAI: There should be only seven levers. Pull the one labelled 'BARRICADES'.\nC: *loud whirring follow by a loud thud*\n[[Turn left]]\n[[Turn right]]",
+        "text": "#GOOD\nAI: See the giant lever at the end of the hallway?\nG: There's like fifty of them, which do I pull? All of them?\nAI: There should be only seven levers. Pull the one labelled 'BARRICADES'.\nC: *loud whirring follow by a loud thud*\n[[Turn towards oxygen]]\n[[Turn towards exit]]",
         "links": [
           {
-            "name": "Turn left",
-            "link": "Turn left",
+            "name": "Turn towards oxygen",
+            "link": "Turn towards oxygen",
             "pid": "10"
           },
           {
-            "name": "Turn right",
-            "link": "Turn right",
+            "name": "Turn towards exit",
+            "link": "Turn towards exit",
             "pid": "11"
           }
         ],
@@ -222,7 +222,7 @@
             "pid": "12"
           }
         ],
-        "name": "Turn left",
+        "name": "Turn towards oxygen",
         "pid": "10",
         "position": {
           "x": "334",
@@ -241,7 +241,7 @@
             "pid": "12"
           }
         ],
-        "name": "Turn right",
+        "name": "Turn towards exit",
         "pid": "11",
         "position": {
           "x": "904",
