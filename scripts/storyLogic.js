@@ -79,7 +79,5 @@ var fadeToWhite = function () {
     $("#fullscreen").append("<h1 class='black'>END</h1>");
     $("#fullscreen").append("<h2 class='black'>A game by Sophia Shaikh, Nikhil Komirisetti, and Tom Nguyen</h1>")
     $("#fullScreen").css("background", "white");
-    $("#fullScreen").fadeIn(1000);
-
-    
+    $("#fullScreen").fadeIn(1000);   
 }
