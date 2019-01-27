@@ -117,12 +117,10 @@ function finalBranch(pid) {
     var buttonOptionA = $("#optionA");
     var buttonOptionB = $("#optionB");
 
+ 
+
     console.log("Good points " + goodScore);
     console.log("Bad points " + badScore);
-
-    var chapter = storyJSON[chapterIndex].text.split("\n");
-    var text = chapter[lineIndex];
-
 
     populateMessage();
 }

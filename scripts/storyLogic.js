@@ -7,6 +7,7 @@ var badScore = 0;
 var loadStory = function () {
     $.get("https://api.myjson.com/bins/q3gso", function (data, textStatus, jqXHR) {
         storyJSON = data.passages;
+        console.log(storyJSON);
     });
 }
 
