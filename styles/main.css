@@ -18,23 +18,42 @@ body {
     height: 100%;
     right: 0;
     border-left: 1px solid #292929;
+    padding-top: 45px; 
     padding-bottom: 130px;
     overflow: scroll;
 }
 
 .message {
-	background: white;
-    color: black;
+    color: white;
     padding: 10px;
-    margin: 10px;
-    font-family: 'Major Mono Display';
+    margin: 3px 10px;
+    font-family: monospace;
     font-size: 16px;
-    width: 300px;
-    border-radius: 4px;
+    width: 330px;
+    border-left: 3px solid;
+}
+
+.USERmsg {
+    border-left-color: #e82f2f;
 }
 
 .CPUmsg {
-    margin-left: 40px;
+    border-left-color: #4bb5f3;
+}
+
+.CONSOLEmsg {
+    border-left-color: #ffb026;
+}
+
+#audioGraphic {
+	position: fixed;
+    top: 10px;
+    width: 330px;
+    margin: 0 10px;
+    height: 35px;
+    background: red;
+    padding: 10px;
+    border-left: 3px solid transparent;
 }
 
 #buttonContainer {
