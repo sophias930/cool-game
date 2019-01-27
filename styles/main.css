@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Pixel';
-    src: url('../fonts/DisposableDroidBB.otf');
-}
-    
 body {
     position: absolute;
     height: 100%;
@@ -10,6 +5,7 @@ body {
     background: #3e3e3e;
     color: #ffffff;
     font-family: monospace;
+    overflow: hidden;
 }
 
 #messagesContainer {
@@ -21,6 +17,8 @@ body {
     padding-top: 45px; 
     padding-bottom: 130px;
     overflow: scroll;
+    font-size: 18px;
+    background: #3e3e3e;
 }
 
 .message {
@@ -29,7 +27,6 @@ body {
     padding: 10px;
     margin: 10px 10px;
     font-family: "VT323", monospace;
-    font-size: 16px;
     width: 300px;
 }
 
@@ -81,8 +78,27 @@ body {
     padding: 10px;
     margin: 10px;
     font-family: "VT323", monospace;
-    font-size: 16px;
     width: 330px;
     border: none;
     border-radius: 5px;
+    font-size: 18px;
+}
+
+#graphicsContainer {
+	position: absolute;
+    height: 100%;
+    width: calc(100% - 350px);
+    perspective: 500px
+}
+
+#floorPlan {
+	height: 720px;
+    width: 720px;
+    background: url(../images/floorplan.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -360px;
+    transform: rotateX(45deg) rotateZ(45deg)
+    
 }
