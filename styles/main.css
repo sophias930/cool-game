@@ -208,16 +208,21 @@ body {
     width: 100%;
     pointer-events: none;
     z-index: 9999;
+    line-height: 100%;
+    text-align: center;
 }
 
 h1 {
     font-family: 'Major Mono Display';
     font-style: normal;
     font-weight: 400; 
+    font-size: 200px;
+    
 }
 
 h2 {
     font-family: "VT323", monospace;
+    font-size:100px;
 }
 
 .white {
