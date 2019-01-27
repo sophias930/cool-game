@@ -201,10 +201,19 @@ body {
 	top: 506px;
 }
 
-#blackscreen {
+#fullScreen {
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
 
+#blackscreen {
+    background: #000000
 }
 
 #whitescreen {
-    
+    background: #ffffff
 }

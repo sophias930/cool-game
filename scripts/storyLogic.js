@@ -64,10 +64,18 @@ var isGoodOrBad = function (text) {
 
 }
 
-var fadeToDark = function(){
+var fadeToDark = function() {
+    $("#fullScreen").fadeOut(0);
+    $("#fullScreen").css("background", "black");
+    $("#fullScreen").fadeIn(1000);
+
     
 }
 
 var fadeToWhite = function () {
-    
+    $("#fullScreen").fadeOut(0);
+    $("#fullScreen").css("background", "black");
+    $("#fullScreen").fadeIn(1000);
+
+
 }
