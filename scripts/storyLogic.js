@@ -42,9 +42,3 @@ var isConsole = function (text) {
     }
 }
 
-var beginBranch = function () {
-    var buttonOptionA = $("optionA");
-    var buttonOptionB = $("optionB");
-
-    
-}
