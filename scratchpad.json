@@ -214,7 +214,7 @@
         ]
       },
       {
-        "text": "#GOOD\nG: I don't see anything to do here.\nAI: There there's a panel in the far corner, with a small latch on it. Feel along the wall and you should find it. \nG: I can't find... oh. 'ELECTROLYSIS' containers? What do I do with these? \n[[Go back to your room]]\n",
+        "text": "#GOOD\nG: I don't see anything to do here.\nAI: There there's a panel in the far corner, with a small latch on it. Feel along the wall and you should find it. \nG: I can't find... oh. There's 'ELECTROLYSIS' containers inside? What do I do with these? \nAI: There should be one attached to the wall.\n[[Go back to your room]]\n",
         "links": [
           {
             "name": "Go back to your room",
