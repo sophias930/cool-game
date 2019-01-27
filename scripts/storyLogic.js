@@ -66,8 +66,8 @@ var isGoodOrBad = function (text) {
 
 var fadeToDark = function() {
     $("#fullScreen").fadeOut(0);
-    $("#fullscreen").append("<h1 class='white'>END</h1>");
-    $("#fullscreen").append("<h2 class='white'>A game by Sophia Shaikh, Nikhil Komirisetti, and Tom Nguyen</h1>")
+    $("#fullScreen").append("<h1 class='white'>END</h1>");
+    $("#fullScreen").append("<h2 class='white'>A game by Sophia Shaikh, Nikhil Komirisetti, and Tom Nguyen</h1>")
     $("#fullScreen").css("background", "black");
     $("#fullScreen").fadeIn(1000);
 
@@ -76,8 +76,8 @@ var fadeToDark = function() {
 
 var fadeToWhite = function () {
     $("#fullScreen").fadeOut(0);
-    $("#fullscreen").append("<h1 class='black'>END</h1>");
-    $("#fullscreen").append("<h2 class='black'>A game by Sophia Shaikh, Nikhil Komirisetti, and Tom Nguyen</h1>")
+    $("#fullScreen").append("<h1 class='black'>END</h1>");
+    $("#fullScreen").append("<h2 class='black'>A game by Sophia Shaikh, Nikhil Komirisetti, and Tom Nguyen</h1>")
     $("#fullScreen").css("background", "white");
     $("#fullScreen").fadeIn(1000);   
 }
