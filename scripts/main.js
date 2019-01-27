@@ -8,7 +8,7 @@ var animation;
 $(document).ready(() => {
     chatContainer = $("#chatContainer");
 
-    if(IS_DEBUG){
+    if (IS_DEBUG) {
         apiLoad = 5000;
         animation = 200;
     } else {
@@ -45,7 +45,8 @@ var populateMessage = function () {
     messageBox.fadeOut(0);
 
     chatContainer.animate({
-        scrollTop: chatContainer.prop("scrollHeight")}, 400);
+        scrollTop: chatContainer.prop("scrollHeight")
+    }, 400);
 
     messageBox.fadeIn(animation, function () {
         var timeout;
@@ -58,7 +59,7 @@ var populateMessage = function () {
 
         setTimeout(function () {
             populateMessage(true)
-        }, 200);
+        }, timeout);
         $("#chatContainer").scrollTop(9999);
     });
 
@@ -79,13 +80,18 @@ var beginBranch = function () {
 
     var optionA = storyJSON[chapterIndex].links[0];
     var optionB = storyJSON[chapterIndex].links[1];
-
+    console.log(optionA.name);
+    if (optionA.name==="good ending"){
+        ending()
+        return;
+    }
 
     buttonOptionA.html(optionA.name);
     buttonOptionB.html(optionB.name);
 
     buttonOptionA.off();
     buttonOptionB.off();
+
 
     buttonOptionA.click({
         param1: optionA.pid
@@ -96,7 +102,6 @@ var beginBranch = function () {
 };
 
 function branchSelected(event) {
-    console.log(event);
     var PID = event.data.param1;
     var i;
     for (i = 0; i < storyJSON.length; i++) {
@@ -114,16 +119,17 @@ function branchSelected(event) {
     $("#buttonContainer").slideUp(1000);
 };
 
-function finalBranch(pid) {
-    var buttonOptionA = $("#optionA");
-    var buttonOptionB = $("#optionB");
+function ending(){
+    if (goodScore>badScore){
+        chapterIndex = 12;
+    } else {
+        chapterIndex = 13;
+    }
+    populateMessage();
+}
 
-    console.log("Good points " + goodScore);
-    console.log("Bad points " + badScore);
-
-    var chapter = storyJSON[chapterIndex].text.split("\n");
-    var text = chapter[lineIndex];
-
-
+function finalBranch() {
+    chapterIndex = 11;
+    lineIndex = 0;
     populateMessage();
 }

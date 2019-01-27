@@ -1,7 +1,5 @@
 var playMessageSound = function (message) {
-    console.log(message);
     if (message === "C: *phone ringing*") {
-        console.log("audio about to play");
         var music = document.getElementById("phone_ringing");
     
         var promise = music.play();
@@ -13,7 +11,6 @@ var playMessageSound = function (message) {
             });
         }   
     } else if (message === "C: *click*") {
-        console.log("audio about to play");
         var music = document.getElementById("phone_pickedup");
     
         var promise = music.play();
@@ -25,7 +22,6 @@ var playMessageSound = function (message) {
             });
         } 
     } else if (message === "C: *whizzing noise*") {
-        console.log("audio about to play");
         var music = document.getElementById("power_whizzing");
     
         var promise = music.play();
@@ -37,7 +33,6 @@ var playMessageSound = function (message) {
             });
         } 
     } else if (message === "C: *buzzing noise and door opening*") {
-        console.log("audio about to play");
         var music = document.getElementById("door_buzz");
     
         var promise = music.play();
@@ -48,9 +43,9 @@ var playMessageSound = function (message) {
                 console.log(error.name + " " + error.message);
             });
         } 
-    } else if (message === "C: *loud whirring followed by a loud thud*") {
+    } else if (message === "C: *loud whirring follow by a loud thud*") {
         console.log("audio about to play");
-        var music = document.getElementById("power_whizzing");
+        var music = document.getElementById("barricade");
     
         var promise = music.play();
         if (promise !== undefined) {
@@ -61,7 +56,6 @@ var playMessageSound = function (message) {
             });
         } 
     } else if (message === "C: *phone line dead noise*") {
-        console.log("audio about to play");
         var music = document.getElementById("dead_phone");
     
         var promise = music.play();
@@ -73,7 +67,6 @@ var playMessageSound = function (message) {
             });
         } 
     } else if (message === "C: *wiping noise*") {
-        console.log("audio about to play");
         var music = document.getElementById("wiping_mirror");
     
         var promise = music.play();
@@ -85,7 +78,6 @@ var playMessageSound = function (message) {
             });
         } 
     } else if (message === "C: *door opening*") {
-        console.log("audio about to play");
         var music = document.getElementById("door_opening");
     
         var promise = music.play();
@@ -109,10 +101,4 @@ var playMessageSound = function (message) {
 // *phone line dead noise* --> dead_phone.mp3
 // *wiping noise* --> wiping_mirror.mp3
 // *door opening* --> door_opening.mp3
-/*
-    console.log(message);
-    if (message === "C: *phone ringing* "){
-
-    }
-    */
 
