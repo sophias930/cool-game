@@ -166,11 +166,11 @@
         ]
       },
       {
-        "text": "#BAD\nG: You tell me not to worry about it but then tell me to check the doors? \nAI: I suppose.\nG: Cool, cool, which should I check first?\nAI: I will leave it up to you.\nC: *door opening*\nG: It's some kind of bedroom, but it's sooo much nicer than mine! There's no steel anywhere! No fair. \nG: It smells disgusting though. Like, actually repulsive. Let's try a different one.\nC: *door opening*\nG: ...\nG: .....\nG: AAAAAAAAAAAAAAAAAAA!!!!!\nAI: They have been dead for quite some time now. There is nothing to fear.\nG: HOW DOES THAT MAKE THINGS BETTER! Am I gonna be killed too? This man has a KNIFE IN HIS CHEST! Is there even ANYONE alive on this ship? \nG: ...\nG: I'm gonna be sick.\n[[Turn left UNFINISHED]] \n[[Turn right]] ",
+        "text": "#BAD\nG: You tell me not to worry about it but then tell me to check the doors? \nAI: I suppose.\nG: Cool, cool, which should I check first?\nAI: I will leave it up to you.\nC: *door opening*\nG: It's some kind of bedroom, but it's sooo much nicer than mine! There's no steel anywhere! No fair. \nG: It smells disgusting though. Like, actually repulsive. Let's try a different one.\nC: *door opening*\nG: ...\nG: .....\nG: AAAAAAAAAAAAAAAAAAA!!!!!\nAI: They have been dead for quite some time now. There is nothing to fear.\nG: HOW DOES THAT MAKE THINGS BETTER! Am I gonna be killed too? This man has a KNIFE IN HIS CHEST! Is there even ANYONE alive on this ship? \nG: ...\nG: I'm gonna be sick.\n[[Turn left]] \n[[Turn right]] ",
         "links": [
           {
-            "name": "Turn left UNFINISHED",
-            "link": "Turn left UNFINISHED",
+            "name": "Turn left",
+            "link": "Turn left",
             "pid": "10"
           },
           {
@@ -190,11 +190,11 @@
         ]
       },
       {
-        "text": "#GOOD\nAI: See the giant lever at the end of the hallway?\nG: There's like fifty of them, which do I pull? All of them?\nAI: There should be only seven levers. Pull the one labelled 'BARRICADES'.\nC: *loud whirring follow by a loud thud* \n[[Turn left UNFINISHED]]\n[[Turn right]]",
+        "text": "#GOOD\nAI: See the giant lever at the end of the hallway?\nG: There's like fifty of them, which do I pull? All of them?\nAI: There should be only seven levers. Pull the one labelled 'BARRICADES'.\nC: *loud whirring follow by a loud thud* \n[[Turn left]]\n[[Turn right]]",
         "links": [
           {
-            "name": "Turn left UNFINISHED",
-            "link": "Turn left UNFINISHED",
+            "name": "Turn left",
+            "link": "Turn left",
             "pid": "10"
           },
           {
@@ -214,7 +214,7 @@
         ]
       },
       {
-        "text": "#GOOD\nG: I don't see anything to do here.\nAI: There there's a panel in the far corner, with a small latch on it. Feel along the wall and you should find it. \nG: I can't find... oh. There's 'ELECTROLYSIS' containers inside? What do I do with these? \nAI: There should be one attached to the wall.\n[[Go back to your room]]\n",
+        "text": "#GOOD\nG: I don't see anything to do here.\nAI: There there's a panel in the far corner, with a small latch on it. Feel along the wall and you should find it. \nG: I can't find... oh. There's 'ELECTROLYSIS' containers inside? What do I do with these? \nAI: There should be one attached to the wall already. Take it out and replace it with a new container.\nG: Alright. Oh gee, this is much heavier than I expected.\nG: Okay, done!\n[[Go back to your room]]\n",
         "links": [
           {
             "name": "Go back to your room",
@@ -222,7 +222,7 @@
             "pid": "12"
           }
         ],
-        "name": "Turn left UNFINISHED",
+        "name": "Turn left",
         "pid": "10",
         "position": {
           "x": "334",
