@@ -1,11 +1,13 @@
 
 
-var createMessage = function(isComputer, message) {
+var createMessage = function(speaker, message) {
     var messageLabel;
-    if (isComputer === true){
+    if (speaker === "AI"){
         messageLabel =  $('<div class="message CPUmsg"></div>');
-    } else {
+    } else if (speaker === "G") {
         messageLabel = $('<div class="message USERmsg"></div>');
+    } else {
+        messageLabel = $('<div class="message CONSOLEmsg"></div>');
     }
 
     messageLabel.append(message);

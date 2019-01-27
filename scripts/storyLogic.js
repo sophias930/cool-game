@@ -14,3 +14,21 @@ var getNextMessage = function (nextLink) {
     }
     return ;
 }
+
+var isGirl = function(text) {
+   if (text.match("^G: ")) {
+       return text.slice(3,);
+   }
+}
+
+var isAI = function(text) {
+    if (text.match("^AI: ")) {
+        return text.slice(4,);
+    }
+}
+
+var isConsole = function(text) {
+    if(text.match("^C: ") & text.match("*$")){
+        return text.slice(1,);
+    }
+}
