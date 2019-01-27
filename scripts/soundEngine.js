@@ -43,8 +43,9 @@ var playMessageSound = function (message) {
                 console.log(error.name + " " + error.message);
             });
         } 
-    } else if (message === "C: *loud whirring followed by a loud thud*") {
-        var music = document.getElementById("power_whizzing");
+    } else if (message === "C: *loud whirring follow by a loud thud*") {
+        console.log("audio about to play");
+        var music = document.getElementById("barricade");
     
         var promise = music.play();
         if (promise !== undefined) {
@@ -100,10 +101,4 @@ var playMessageSound = function (message) {
 // *phone line dead noise* --> dead_phone.mp3
 // *wiping noise* --> wiping_mirror.mp3
 // *door opening* --> door_opening.mp3
-/*
-    console.log(message);
-    if (message === "C: *phone ringing* "){
-
-    }
-    */
 
