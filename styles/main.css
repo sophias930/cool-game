@@ -14,11 +14,16 @@ body {
     height: 100%;
     right: 0;
     border-left: 1px solid #292929;
-    padding-top: 45px; 
-    padding-bottom: 130px;
-    overflow: scroll;
+    overflow: hidden;
     font-size: 18px;
     background: #3e3e3e;
+}
+
+#chatContainer {
+	overflow: scroll;
+    height: 100%;
+    padding-top: 45px; 
+    padding-bottom: 130px;
 }
 
 .message {
@@ -88,7 +93,12 @@ body {
 	position: absolute;
     height: 100%;
     width: calc(100% - 350px);
-    perspective: 500px
+    perspective: 500px;
+}
+
+#graphicsContainer * {
+	transform-style: preserve-3d;
+    transition: transform 0.5s;
 }
 
 #floorPlan {
@@ -99,6 +109,30 @@ body {
     top: 50%;
     left: 50%;
     margin: -360px;
-    transform: rotateX(45deg) rotateZ(45deg)
-    
+    transform: rotateX(45deg) rotateZ(45deg);
+}
+
+.task {
+    height: 21px;
+    width: 21px;
+    background: #4bb5f3;
+    position: absolute;
+    margin: -10px;
+    border-radius: 40px;
+    transform: rotateZ(-45deg) rotateX(-45deg);
+}
+
+#taskA {
+	left: 520px;
+    top: 294px;
+}
+
+#taskB {
+    left: 99px;
+	top: 368px;
+}
+
+#taskC {
+    left: 135px;
+	top: 506px;
 }

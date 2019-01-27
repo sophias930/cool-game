@@ -41,7 +41,6 @@ var populateMessage = function () {
         message = isConsole(message);
         messageBox = createMessage("Console", message);
     }
-        
     chatContainer.append(messageBox);
     messageBox.fadeOut(0);
 
@@ -59,8 +58,10 @@ var populateMessage = function () {
 
         setTimeout(function () {
             populateMessage(true)
-        }, timeout);
+        }, 200);
+        $("#chatContainer").scrollTop(9999);
     });
+
 };
 
 var beginBranch = function () {
@@ -82,7 +83,7 @@ var beginBranch = function () {
 
     buttonOptionA.html(optionA.name);
     buttonOptionB.html(optionB.name);
-    
+
     buttonOptionA.off();
     buttonOptionB.off();
 
