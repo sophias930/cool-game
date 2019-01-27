@@ -1,8 +1,8 @@
 var chatContainer;
 var currentMessageIndex = 0;
 $(document).ready(() => {
-    //chatContainer = $("#chatContainer");    
-    //populateMessage(true);
+    chatContainer = $("#chatContainer");
+    populateMessage(true);
     loadStory();
 })
 
@@ -13,7 +13,13 @@ var populateMessage = function (isComputer) {
     var messageBox = createMessage("AI", message);
     chatContainer.append(messageBox);
     messageBox.fadeOut(0);
-    messageBox.fadeIn(3000, function () {
-        populateMessage(true);
-    })
+    messageBox.fadeIn(1500, function () {
+        setTimeout(function() { 
+            populateMessage(true) 
+        }, 4000);
+    });
+}
+
+var branch = function () {
+
 }

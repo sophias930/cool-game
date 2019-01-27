@@ -9,7 +9,7 @@ var loadStory = function () {
 }
 
 var getNextMessage = function (nextLink) {
-    if (nextText === null){
+    if (nextLink === null){
         storyJSON[0];
     }
     return ;
