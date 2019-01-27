@@ -1,13 +1,13 @@
 var storyJSON;
 var chapterIndex = 0;
 var lineIndex = 0;
+var goodScore = 0;
+var badScore = 0;
 
 var loadStory = function () {
     $.get("https://api.myjson.com/bins/14n2c0", function (data, textStatus, jqXHR) {
         storyJSON = data.passages;
         var string = data.passages[0].text;
-        console.log(string);
-        console.log(string.split("\n"));
     });
 }
 
@@ -42,3 +42,14 @@ var isConsole = function (text) {
     }
 }
 
+var isGoodOrBad = function (text) {
+    if (text.startsWith("#")) {
+        if (text.startsWith("#G")) {
+            goodScore++;
+        } else {
+            badScore++;
+        }
+        lineIndex++;
+    }
+
+}
