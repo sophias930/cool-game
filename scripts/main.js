@@ -58,7 +58,7 @@ var populateMessage = function () {
 
         setTimeout(function () {
             populateMessage(true)
-        }, 200);
+        }, timeout);
         $("#chatContainer").scrollTop(9999);
     });
 
