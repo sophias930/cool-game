@@ -23,11 +23,10 @@ var populateMessage = function () {
         beginBranch();
         return;
     } else {
+        message = isConsole(message);
         messageBox = createMessage("Console", message);
     }
-    chatContainer.stop().animate({
-        scrollTop: chatContainer[0].scrollHeight
-    }, 800);
+        
     chatContainer.append(messageBox);
     messageBox.fadeOut(0);
     messageBox.fadeIn(500, function () {

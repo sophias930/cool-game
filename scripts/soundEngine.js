@@ -1,5 +1,5 @@
-var audio;
 var playMessageSound = function (message){
+<<<<<<< HEAD
     if (message === "*phone ringing* "){
         /*
         audio = new Audio("music/phone_ringing.mp3");
@@ -19,3 +19,10 @@ var playMessageSound = function (message){
 // *phone line dead noise* --> dead_phone.mp3
 // *wiping noise* --> wiping_mirror.mp3
 // *door opening* --> door_opening.mp3
+=======
+    console.log(message);
+    if (message === "C: *phone ringing* "){
+        
+    }
+}
+>>>>>>> 6c3f5bb728ef8df4aa9e60b73e1aeb418e1c4bd1
