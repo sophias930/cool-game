@@ -1,38 +1,104 @@
 var playMessageSound = function (message) {
     console.log(message);
-    if (message === "C: *phone ringing* ") {
-        /*
-        audio = new Audio("music/phone_ringing.mp3");
-        audio.play();   
-        */
+    if (message === "C: *phone ringing*") {
         console.log("audio about to play");
         var music = document.getElementById("phone_ringing");
-
-        
+    
         var promise = music.play();
         if (promise !== undefined) {
             promise.then(_ => {
-                console.log("no error");
                 music.play();
             }).catch(error => {
-                console.log(error);
+                console.log(error.name + " " + error.message);
             });
-        }
-        
-        //playMusic(music);
-
+        }   
+    } else if (message === "C: *click*") {
+        console.log("audio about to play");
+        var music = document.getElementById("phone_pickedup");
+    
+        var promise = music.play();
+        if (promise !== undefined) {
+            promise.then(_ => {
+                music.play();
+            }).catch(error => {
+                console.log(error.name + " " + error.message);
+            });
+        } 
+    } else if (message === "C: *whizzing noise*") {
+        console.log("audio about to play");
+        var music = document.getElementById("power_whizzing");
+    
+        var promise = music.play();
+        if (promise !== undefined) {
+            promise.then(_ => {
+                music.play();
+            }).catch(error => {
+                console.log(error.name + " " + error.message);
+            });
+        } 
+    } else if (message === "C: *buzzing noise and door opening*") {
+        console.log("audio about to play");
+        var music = document.getElementById("door_buzz");
+    
+        var promise = music.play();
+        if (promise !== undefined) {
+            promise.then(_ => {
+                music.play();
+            }).catch(error => {
+                console.log(error.name + " " + error.message);
+            });
+        } 
+    } else if (message === "C: *loud whirring followed by a loud thud*") {
+        console.log("audio about to play");
+        var music = document.getElementById("power_whizzing");
+    
+        var promise = music.play();
+        if (promise !== undefined) {
+            promise.then(_ => {
+                music.play();
+            }).catch(error => {
+                console.log(error.name + " " + error.message);
+            });
+        } 
+    } else if (message === "C: *phone line dead noise*") {
+        console.log("audio about to play");
+        var music = document.getElementById("dead_phone");
+    
+        var promise = music.play();
+        if (promise !== undefined) {
+            promise.then(_ => {
+                music.play();
+            }).catch(error => {
+                console.log(error.name + " " + error.message);
+            });
+        } 
+    } else if (message === "C: *wiping noise*") {
+        console.log("audio about to play");
+        var music = document.getElementById("wiping_mirror");
+    
+        var promise = music.play();
+        if (promise !== undefined) {
+            promise.then(_ => {
+                music.play();
+            }).catch(error => {
+                console.log(error.name + " " + error.message);
+            });
+        } 
+    } else if (message === "C: *door opening*") {
+        console.log("audio about to play");
+        var music = document.getElementById("door_opening");
+    
+        var promise = music.play();
+        if (promise !== undefined) {
+            promise.then(_ => {
+                music.play();
+            }).catch(error => {
+                console.log(error.name + " " + error.message);
+            });
+        } 
     };
 }
 
-async function playMusic(music) {
-    try {
-        console.log("about to play!");
-        await music.play();
-        console.log("playing...");
-      } catch(err) {
-        console.log(err);
-      }
-}
 
 
 // *phone ringing* --> phone_ringing.mp3
