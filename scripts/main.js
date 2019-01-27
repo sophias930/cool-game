@@ -2,6 +2,7 @@ var chatContainer;
 $(document).ready(() => {
     //chatContainer = $("#chatContainer");    
     //populateMessage(true);
+    loadStory();
 })
 
 
