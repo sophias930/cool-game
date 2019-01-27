@@ -202,10 +202,29 @@ body {
 	top: 506px;
 }
 
-#blackscreen {
-
+#fullScreen {
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: 9999;
 }
 
-#whitescreen {
-    
+h1 {
+    font-family: 'Major Mono Display';
+    font-style: normal;
+    font-weight: 400; 
+}
+
+h2 {
+    font-family: "VT323", monospace;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
 }
