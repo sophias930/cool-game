@@ -43,7 +43,7 @@ var playMessageSound = function (message) {
                 console.log(error.name + " " + error.message);
             });
         } 
-    } else if (message === "C: *loud whirring follow by a loud thud*") {
+    } else if (message === "C: *loud whirring followed by a loud thud*") {
         console.log("audio about to play");
         var music = document.getElementById("barricade");
     
