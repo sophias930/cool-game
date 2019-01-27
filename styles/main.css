@@ -210,10 +210,20 @@ body {
     z-index: 9999;
 }
 
-#blackscreen {
-    background: #000000
+h1 {
+    font-family: 'Major Mono Display';
+    font-style: normal;
+    font-weight: 400; 
 }
 
-#whitescreen {
-    background: #ffffff
+h2 {
+    font-family: "VT323", monospace;
+}
+
+.white{
+    color: white;
+}
+
+.black{
+    color: black;
 }
