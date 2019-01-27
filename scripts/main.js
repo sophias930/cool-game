@@ -35,6 +35,9 @@ var populateMessage = function () {
         message = isGirl(message);
         messageBox = createMessage("G", message);
     } else if (isBranch(message)) {
+        if (chapterIndex === 12 || chapterIndex===13){
+            return;
+        }
         beginBranch();
         return;
     } else if (isEnd(message)) {
