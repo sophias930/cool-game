@@ -1,8 +1,7 @@
 var chatContainer;
-var currentMessageIndex = 0;
 $(document).ready(() => {
     chatContainer = $("#chatContainer");
-    populateMessage(true);
+    setTimeout(function() {populateMessage(true)},5000);
     loadStory();
 })
 

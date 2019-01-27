@@ -1,4 +1,7 @@
 var storyJSON;
+var chapterIndex = 0;
+var lineIndex = 0;
+
 var loadStory = function () {
     $.get("https://api.myjson.com/bins/14n2c0", function (data, textStatus, jqXHR) {
         storyJSON = data.passages;
@@ -8,11 +11,11 @@ var loadStory = function () {
     });
 }
 
-var getNextMessage = function (nextLink) {
-    if (nextLink === null){
-        storyJSON[0];
-    }
-    return ;
+var getNextMessage = function () {
+    var chapter = storyJSON[chapterIndex].text.split("\n");
+    var text = chapter[lineIndex];
+    lineIndex++;
+    return text;
 }
 
 var isGirl = function(text) {
@@ -27,8 +30,14 @@ var isAI = function(text) {
     }
 }
 
+var isBranch = function (text) {
+    if (text.match("^[[")  & text.match("]]$")) {
+        return text.slice(4,);
+    }
+}
+
 var isConsole = function(text) {
-    if(text.match("^C: ") & text.match("*$")){
+    if(text.match("^C: ")){
         return text.slice(1,);
     }
 }
