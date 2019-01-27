@@ -1,10 +1,25 @@
 var chatContainer;
+var IS_DEBUG = true;
+
+var apiLoad;
+var animation;
+
+
 $(document).ready(() => {
     chatContainer = $("#chatContainer");
+
+    if(IS_DEBUG){
+        apiLoad = 5000;
+        animation = 200;
+    } else {
+        apiLoad = 2000;
+        animation = 750;
+    }
+
     $("#buttonContainer").slideUp(0);
     setTimeout(function () {
         populateMessage(true)
-    }, 5000);
+    }, apiLoad);
     loadStory();
 })
 
@@ -23,17 +38,30 @@ var populateMessage = function () {
         beginBranch();
         return;
     } else {
+        message = isConsole(message);
         messageBox = createMessage("Console", message);
     }
     chatContainer.append(messageBox);
     messageBox.fadeOut(0);
-    messageBox.fadeIn(500, function () {
+
+    chatContainer.animate({
+        scrollTop: chatContainer.prop("scrollHeight")}, 400);
+
+    messageBox.fadeIn(animation, function () {
+        var timeout;
+        if (IS_DEBUG) {
+            timeout = 200;
+        } else {
+            timeout = 1500 + message.length * 50
+        }
+        console.log(message);
+
         setTimeout(function () {
             populateMessage(true)
         }, 200);
         $("#chatContainer").scrollTop(9999);
     });
-    
+
 };
 
 var beginBranch = function () {
@@ -55,7 +83,7 @@ var beginBranch = function () {
 
     buttonOptionA.html(optionA.name);
     buttonOptionB.html(optionB.name);
-    
+
     buttonOptionA.off();
     buttonOptionB.off();
 
@@ -90,16 +118,12 @@ function finalBranch(pid) {
     var buttonOptionA = $("#optionA");
     var buttonOptionB = $("#optionB");
 
+    console.log("Good points " + goodScore);
+    console.log("Bad points " + badScore);
+
     var chapter = storyJSON[chapterIndex].text.split("\n");
     var text = chapter[lineIndex];
 
-
-    for (i = 0; i < storyJSON.length; i++) { // maybe hardcode the final branch here
-        if (storyJSON[i].pid === pid) {
-            chapterIndex = i;
-            lineIndex = 0;
-        }
-    }
 
     populateMessage();
 }

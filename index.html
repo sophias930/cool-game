@@ -5,6 +5,7 @@
     <title>INSERT GAME NAME HERE</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
+    <script src="scripts/howler.core.js"></script>
     <script src="scripts/messageContainer.js"></script>
     <script src="scripts/storyLogic.js"></script>
     <script src="scripts/soundEngine.js"></script>
@@ -19,6 +20,35 @@
 </head>
 
 <body>
+    <!-- EMBEDDED AUDIO -->
+    <embed loop="true" src="music/background_music_simple.mp3" hidden="true" type="audio/mpeg"></embed>
+    <audio id="background">
+        <source src="music/background_music_simple.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="barricade">
+        <source src="music/barricade_thudding.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="dead_phone">
+            <source src="music/dead_phone.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="door_buzz">
+            <source src="music/door_buzz.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="door_opening">
+            <source src="music/door_opening.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="phone_pickedup">
+            <source src="music/phone_pickedup.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="phone_ringing">
+            <source src="music/phone_ringing.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="power_whizzing">
+            <source src="music/power_whizzing.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="wiping_mirror">
+            <source src="music/wiping_mirror.mp3" type="audio/mpeg">
+    </audio>
     <div id="titleContainer"></div>
     <div id="graphicsContainer">
         <div id="floorPlan">
@@ -32,7 +62,7 @@
             TRANSCRIPTION: [:::::::---------------]
         </div>
         <div id="chatContainer">
-           <div id="bottom"></div>
+
         </div>
         <div id="buttonContainer">
             <button id="optionA">A</button>
