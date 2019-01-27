@@ -69,7 +69,7 @@ var fadeToDark = function() {
     $("#fullScreen").css("background", "black");
     $("#fullScreen").fadeIn(1000);
 
-    
+
 }
 
 var fadeToWhite = function () {
@@ -77,5 +77,5 @@ var fadeToWhite = function () {
     $("#fullScreen").css("background", "black");
     $("#fullScreen").fadeIn(1000);
 
-
+    
 }
