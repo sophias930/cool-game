@@ -5,7 +5,7 @@ var goodScore = 0;
 var badScore = 0;
 
 var loadStory = function () {
-    $.get("https://api.myjson.com/bins/q3gso", function (data, textStatus, jqXHR) {
+    $.get("https://api.myjson.com/bins/1di0l4", function (data, textStatus, jqXHR) {
         storyJSON = data.passages;
         console.log(storyJSON);
     });
@@ -16,6 +16,16 @@ var getNextMessage = function () {
     var text = chapter[lineIndex];
     lineIndex++;
     return text;
+}
+
+var isEnd = function (text) {
+    if (text.match("END")){
+        if (goodScore> badScore){
+            fadeToWhite();
+        } else {
+            fadeToDark();
+        }
+    }
 }
 
 var isGirl = function (text) {
@@ -52,4 +62,12 @@ var isGoodOrBad = function (text) {
         lineIndex++;
     }
 
+}
+
+var fadeToDark = function(){
+
+}
+
+var fadeToWhite = function () {
+    
 }

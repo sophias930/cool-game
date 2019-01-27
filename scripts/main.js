@@ -37,7 +37,10 @@ var populateMessage = function () {
     } else if (isBranch(message)) {
         beginBranch();
         return;
-    } else {
+    } else if (isEnd(message)) {
+        return;
+    }
+    else {
         message = isConsole(message);
         messageBox = createMessage("Console", message);
     }
@@ -121,8 +124,10 @@ function branchSelected(event) {
 
 function ending(){
     if (goodScore>badScore){
+        lineIndex = 0;
         chapterIndex = 12;
     } else {
+        lineIndex = 0;
         chapterIndex = 13;
     }
     populateMessage();
