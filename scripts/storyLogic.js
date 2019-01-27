@@ -18,26 +18,33 @@ var getNextMessage = function () {
     return text;
 }
 
-var isGirl = function(text) {
-   if (text.match("^G: ")) {
-       return text.slice(3,);
-   }
+var isGirl = function (text) {
+    if (text.match("^G: ")) {
+        return text.slice(3, );
+    }
 }
 
-var isAI = function(text) {
+var isAI = function (text) {
     if (text.match("^AI: ")) {
-        return text.slice(4,);
+        return text.slice(4, );
     }
 }
 
 var isBranch = function (text) {
-    if (text.match("^[[")  & text.match("]]$")) {
-        return text.slice(4,);
+    if (text.startsWith("[[", 0)) {
+        return text.slice(2, text.length - 2);
     }
 }
 
-var isConsole = function(text) {
-    if(text.match("^C: ")){
-        return text.slice(1,);
+var isConsole = function (text) {
+    if (text.match("^C: ")) {
+        return text.slice(1, );
     }
+}
+
+var beginBranch = function () {
+    var buttonOptionA = $("optionA");
+    var buttonOptionB = $("optionB");
+
+    
 }
