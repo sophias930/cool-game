@@ -25,16 +25,15 @@ var populateMessage = function () {
     } else {
         messageBox = createMessage("Console", message);
     }
-    chatContainer.stop().animate({
-        scrollTop: chatContainer[0].scrollHeight
-    }, 800);
     chatContainer.append(messageBox);
     messageBox.fadeOut(0);
     messageBox.fadeIn(500, function () {
         setTimeout(function () {
             populateMessage(true)
         }, 200);
+        $("#chatContainer").scrollTop(9999);
     });
+    
 };
 
 var beginBranch = function () {
