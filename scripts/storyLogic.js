@@ -65,7 +65,7 @@ var isGoodOrBad = function (text) {
 }
 
 var fadeToDark = function(){
-
+    
 }
 
 var fadeToWhite = function () {
