@@ -25,6 +25,7 @@ $(document).ready(() => {
 
 
 var populateMessage = function () {
+    updateChapterGraphics();
     var message = getNextMessage();
     playMessageSound(message);
     var messageBox;
