@@ -1,4 +1,5 @@
 # Inside
+A branching story-based game.
 
 current bugs:
 - choices at end when there shouldn't be
